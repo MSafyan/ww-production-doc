@@ -1,6 +1,6 @@
 ### NOTE: **we will be working in AWS region N.Verginia _us-east-1_ at top right cornor.**
 
-![](images/region.png)
+![anything](images/region.png)
 
 ## Elastic BeanStalk
 
