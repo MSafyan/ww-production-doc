@@ -1,12 +1,12 @@
 ### NOTE: **we will be working in AWS region N.Verginia _us-east-1_ at top right cornor.**
 
-![anything](images/region.png)
+![anything](images/region.PNG)
 
 ## Elastic BeanStalk
 
 1. Create _New Application_.
 
-   ![](images/bean1.png)
+   ![](images/bean1.PNG)
 
 2. Fill Application Name.
 3. Tag in optional.
