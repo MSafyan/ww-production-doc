@@ -109,10 +109,10 @@ npm start
 - You dont need **Procfile** but if you have it recheck its instructions.
 - make sure **client/build** folder is in github repo you pushed to github because we skipped _Build Stage_ in AWS pipeline.
 - _yarn-lock_ and _package.lock.json_ should not be the part of github project. If you use npm it will not case any error but one project can only have _yarn.lock_ or _package.lock.json_. so add them into **.gitignore** file.
-- port can cause error so you should use meaning port should be assigned by AWS first.
+- port can cause error so you should be careful, meaning port should be assigned by AWS first and then your port number like _3000_.
 
 ```javascript
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 ```
 
 - **npm start** should not use _nodemon_.
@@ -157,11 +157,13 @@ const PORT = process.env.PORT || 3000;
 11. Alies target choose _Elastic beanstalk Environment_ form the dropdown.
 12. click _save recode set_.
     ![](images/route4.PNG)
+
 13. create another _record set_.
 14. Name _www_.
 15. Type _CNAME_.
 16. Alias _No_.
-17. click _Save record set_.
+17. Value: your domain name without _www_.
+18. click _Save record set_.
     ![](images/route5.PNG)
 
 ## certificate Manager
