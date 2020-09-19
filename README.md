@@ -194,6 +194,27 @@ const port = process.env.PORT || 3000;
 11. click on blue button **create record in Route 53**
     ![](images/acm8.PNG)
 
+### Now we Need add https to our Load Balancer
+
+[Helpful Artical for HTTPS](https://medium.com/@j_cunanan05/how-to-redirect-http-to-https-in-amazon-web-services-aws-elastic-beanstalk-67f309734e81)
+
+1. go to elastic beanStalk evn> configuration> load balancer > add listner
+1. port _443_
+1. select your certificate
+1. process default
+1. Click Apply.
+
+   ![](images/bean11.PNG)
+
+## EC2
+
+### For redirecting http to https
+
+1. EC2> your-elastic-environment-instance> Load-Balancer> Listener
+1. select port:80 , delete action and add action
+   ![](images/ec3.PNG)
+   ![](images/ec4.PNG)
+
 ### now visit your domain.
 
 Congratulations
